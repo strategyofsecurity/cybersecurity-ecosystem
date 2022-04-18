@@ -1,81 +1,3 @@
-# Access Control
-
-## Authentication
-
-### Adaptive Authentication
-
-**Overview:** Authentication policies dynamically triggered based on user context (e.g. location, device, etc.).
-
-**Example(s):** [SecureAuth](https://www.secureauth.com/identity-access-management/adaptive-authentication/), [Okta](https://www.okta.com/products/adaptive-multi-factor-authentication/)
-
-### Biometrics
-
-**Overview:** Use of physical or behavioral traits to authenticate and verify identity.
-
-**Example(s):** [Clear](https://www.clearme.com/), [Prove](https://www.prove.com/), [Keyless](https://keyless.io/)
-
-### Federated Identity
-
-**Overview:** Multiple authentication systems share identity data using pre-defined contracts and attribute mappings. Common standards include SAML and OAuth 2.0.
-
-**Example(s):** [Okta](https://www.okta.com/), [Ping Identity](https://www.pingidentity.com), [Stytch](https://stytch.com/), [WorkOS](https://workos.com/)
-
-### Multi-Factor Authentication (MFA)
-
-**Overview:** Authentication that combines two or more authentication requirements (e.g. password and one-time token)  for increased security.
-
-**Example(s):** [Duo Security](https://duo.com/), [Authy](https://authy.com/), [Trusona](https://www.trusona.com/)
-
-### Single Sign-On (SSO)
-
-**Overview:** User authentication to multiple systems with a single session. Historically implemented with agents using web-based sessions.
-
-**Example(s):** [Oracle Access Management](https://www.oracle.com/security/identity-management/technologies/access-management/), [Symantec SiteMinder](https://www.broadcom.com/products/cyber-security/identity/siteminder)
-
-### Social Login
-
-**Overview:** Sign in to third party sites using authentication from social networks.
-
-**Example(s):** [Facebook Login](https://developers.facebook.com/docs/facebook-login/), [Sign in with Slack](https://api.slack.com/authentication/sign-in-with-slack)
-
-## Authorization
-
-### Data Access Governance
-
-**Overview:** Systems for gaining visibility and enforcing access control policies on unstructured data (spreadsheets, documents, PDFs, etc.).
-
-**Example(s):** [Varonis](https://www.varonis.com/), [StealthBits](https://stealthbits.com/), [SailPoint File Access Manager](https://www.sailpoint.com/platform/file-access-manager/), [Immuta](https://www.immuta.com/)
-
-### Directory Services
-
-**Overview:** A repository for collecting information about users, devices, and resources for authentication and authorization. LDAP is a common standard for directory services.
-
-**Example(s):** [Microsoft Active Directory](https://azure.microsoft.com/en-us/services/active-directory/), [ForgeRock Directory Services](https://www.forgerock.com/platform/directory-services), [JumpCloud](https://jumpcloud.com/)
-
-### Identity Governance and Administration (IGA)
-
-**Overview:** Systems for administering accounts and credentials, access provisioning, and identity governance.
-
-**Example(s):** [SailPoint](https://www.sailpoint.com/), [Oracle Identity Governance](https://www.oracle.com/security/identity-management/governance/)
-
-### Privileged Access Management (PAM)
-
-**Overview:** Systems for managing privileged (elevated) access for users, shared accounts, secrets, keys, and other high risk credentials.
-
-**Example(s):** [CyberArk](https://www.cyberark.com/), [BeyondTrust](https://www.beyondtrust.com/), [HashiCorp Vault](https://www.hashicorp.com/products/vault)
-
-### Customer Identity (CIAM)
-
-**Overview:** Systems for controlling customer access to applications and managing customer profile information.
-
-**Example(s):** [Okta](https://www.okta.com/customer-identity/), [ForgeRock](https://www.forgerock.com/digital-identity/customer-identity), [Ping Identity](https://www.pingidentity.com/en/solutions/customer-identity.html), [FusionAuth](https://fusionauth.io/)
-
-### Identity Proofing
-
-**Overview:** A service used for verifying a user's identity based on life history or other data aggregated from public and proprietary data sources.
-
-**Example(s):** [Trulioo](https://www.trulioo.com/), [Jumio](https://www.jumio.com/), [Checkr](https://checkr.com/), [Truework](https://www.truework.com/), [AU10TIX](https://www.au10tix.com/)
-
 # Application Security
 
 ### API Security
@@ -88,13 +10,25 @@
 
 **Overview:** Techniques and tools for assessing website bots and blocking malicious activity.
 
-**Example(s):** [PerimeterX](https://www.perimeterx.com/), [Netacea](https://www.netacea.com/), [Imperva Advanced Bot Detection](https://www.imperva.com/products/advanced-bot-protection-management/), [Shape Security](https://www.shapesecurity.com/)
+**Example(s):** [PerimeterX](https://www.perimeterx.com/), [Netacea](https://www.netacea.com/), [Imperva Advanced Bot Detection](https://www.imperva.com/products/advanced-bot-protection-management/), [F5 Distributed Cloud Bot Defense](https://www.f5.com/cloud/products/bot-defense)
+
+### DevSecOps
+
+**Overview:** An approach to software development that includes the combination of development, security, and operations as a shared responsibility throughout the lifecycle of an application.
+
+**Example(s):** [NIST: DevSecOps](https://csrc.nist.gov/Projects/devsecops)
 
 ### Software Composition Analysis
 
 **Overview:** Processes to identify use of open source software in a codebase to evaluate security, quality, licensing, and other software supply chain risks.
 
 **Example(s):** [Veracode](https://www.veracode.com/), [WhiteSource](https://www.whitesourcesoftware.com/), [Sonatype](https://www.sonatype.com/), [Cloudsmith](https://cloudsmith.com/)
+
+### Software Supply Chain Security
+
+**Overview:** The identification, analysis, monitoring, and mitigation of security risks from third party software vendors, packages, integrations, and other components.
+
+**Example(s):** [Chainguard](https://www.chainguard.dev/), [Cloudsmith](https://cloudsmith.com/), [Phylum](https://phylum.io/)
 
 ### Static and Dynamic Application Security Testing (SAST/DAST)
 
@@ -122,23 +56,29 @@
 
 **Example(s):** [Netskope](https://www.netskope.com/), [Bitglass](https://www.bitglass.com/), [McAfee MVISION Cloud](https://www.mcafee.com/enterprise/en-us/products/mvision-cloud.html)
 
-### Container and Workload Protection
+### Cloud Infrastructure Entitlements Management (CIEM)
 
-**Overview:** Processes and tools for securing containers and workloads within different cloud environments.
+**Overview:** Tools to help companies manage permissions and detect excessive or risky access in cloud environments.
 
-**Example(s):** [Orca](https://orca.security/), [Aqua](https://www.aquasec.com/), [Portshift](https://www.portshift.io/), [Intezer Protect](https://www.intezer.com/intezer-protect/)
+**Example(s):** [Authomize](https://www.authomize.com/), [Ermetic](https://ermetic.com/)
 
-### Management and Compliance
+### Cloud Security Posture Management (CSPM)
 
 **Overview:** Continuous management, monitoring, policy enforcement, and compliance for cloud environment configurations.
 
-**Example(s):** [Bridgecrew](https://bridgecrew.io/), [CloudCheckr](https://cloudcheckr.com/), [Cloudanix](https://www.cloudanix.com/), [Stacklet](https://stacklet.io/), [Armor](https://www.armor.com/)
+**Example(s):** [Wiz](https://www.wiz.io/), [Orca](https://orca.security/), [Bridgecrew](https://bridgecrew.io/), [Cloudanix](https://www.cloudanix.com/), [CrowdStrike Falcon Horizon](https://www.crowdstrike.com/products/cloud-security/falcon-horizon-cspm/)
 
-### Micro-Segmentation
+### Cloud Workload Protection Platforms (CWPP)
+
+**Overview:** Processes and tools for securing containers and workloads within different cloud environments.
+
+**Example(s):** [Aqua](https://www.aquasec.com/), [Portshift](https://www.portshift.io/), [Intezer Protect](https://www.intezer.com/intezer-protect/), [Zscaler Cloud Protection](https://www.zscaler.com/products/zscaler-cloud-protection)
+
+### Microsegmentation
 
 **Overview:** Techniques and tools to logically divide networks into security segments at the workload level with specific controls based on the risk and requirements of each segment.
 
-**Example(s):** [Guardicore](https://www.guardicore.com/)
+**Example(s):** [Akamai Guardicore](https://www.guardicore.com/), [Illumio](https://www.illumio.com/)
 
 # Certifications and Training
 
@@ -192,11 +132,133 @@
 
 **Example(s):** [REvil](https://en.wikipedia.org/wiki/REvil), [WannaCry](https://en.wikipedia.org/wiki/WannaCry_ransomware_attack), [DarkSide](https://en.wikipedia.org/wiki/DarkSide_%28hacking_group%29)
 
+### Spyware and Stalkerware
+
+**Overview:** Tools that enable someone to spy on another person's digital activity without their knowledge.
+
+**Example(s):** [Pegasus](https://en.wikipedia.org/wiki/Pegasus_spyware), [mSpy](https://www.mspy.com/), [ClevGuard](https://www.clevguard.com/)
+
+# Digital Identity
+
+## Authentication
+
+### Access Management
+
+**Overview:** Platforms for identifying, tracking, controlling, and managing user access to applications and infrastructure.
+
+**Example(s):** [Okta Single Sign-On](https://www.okta.com/products/single-sign-on/), [Ping Identity Single Sign-On](https://www.pingidentity.com/en/platform/capabilities/single-sign-on.html), [ForgeRock Access Management](https://www.forgerock.com/platform/access-management)
+
+### Biometrics
+
+**Overview:** Use of physical or behavioral traits to authenticate and verify identity.
+
+**Example(s):** [Clear](https://www.clearme.com/), [Prove](https://www.prove.com/), [Keyless](https://keyless.io/)
+
+### Customer Identity (CIAM)
+
+**Overview:** Systems for controlling customer access to applications and managing customer profile information.
+
+**Example(s):** [Okta](https://www.okta.com/customer-identity/), [ForgeRock](https://www.forgerock.com/digital-identity/customer-identity), [Ping Identity](https://www.pingidentity.com/en/solutions/customer-identity.html), [FusionAuth](https://fusionauth.io/)
+
+### Electronic Identification
+
+**Overview:** Government systems for digital proof of identity for citizens and organizations.
+
+**Example(s):** [Aadhaar](https://uidai.gov.in/), [Israeli ID](https://www.gov.il/en/service/biometric_smart_id_request)
+
+### Identity Graphing and Resolution
+
+**Overview:** Services that correlate online and offline identifiers with consumer identities to create an accurate view of customers.
+
+**Example(s):** [LiveRamp Identity Resolution](https://liveramp.com/identity-resolution/), [Amperity Identity Resolution](https://amperity.com/solutions/use-cases/identity-resolution), [Tapad](https://www.tapad.com/)
+
+### Identity Proofing
+
+**Overview:** A service used for verifying a user's identity based on life history or other data aggregated from public and proprietary data sources.
+
+**Example(s):** [Persona](https://withpersona.com/), [Trulioo](https://www.trulioo.com/), [Jumio](https://www.jumio.com/), [AU10TIX](https://www.au10tix.com/)
+
+### Passwordless and Multi-Factor Authentication
+
+**Overview:** Authentication that replaces traditional passwords or combines two or more authentication requirements (e.g. password and one-time token) for increased security.
+
+**Example(s):** [Stytch](https://stytch.com/), [Transmit Security](https://www.beyondidentity.com/), [HYPR](https://www.hypr.com/), [Beyond Identity](https://www.beyondidentity.com/), [Duo Security](https://duo.com/), [Authy](https://authy.com/), [Trusona](https://www.trusona.com/)
+
+### Password Managers
+
+**Overview:** Tools to help users generate, store, and use secure passwords.
+
+**Example(s):** [1Password](https://1password.com/), [LastPass](https://www.lastpass.com/), [Dashlane](https://www.dashlane.com/)
+
+### Social Login
+
+**Overview:** Sign in to third party sites using authentication from social networks.
+
+**Example(s):** [Facebook Login](https://developers.facebook.com/docs/facebook-login/), [Google Sign-In](https://developers.google.com/identity/sign-in/web/sign-in), [Sign in with Slack](https://api.slack.com/authentication/sign-in-with-slack), [Passport](http://www.passportjs.org/)
+
+## Authorization
+
+### Background Screening
+
+**Overview:** Services that compile and help verify employment, criminal, financial, and other records for people and organizations.
+
+**Example(s):** [Checkr](https://checkr.com/), [Truework](https://www.truework.com/), [HireRight](https://www.hireright.com/)
+
+### Data Access Governance
+
+**Overview:** Systems for gaining visibility and enforcing access control policies on unstructured data (spreadsheets, documents, PDFs, etc.).
+
+**Example(s):** [Varonis](https://www.varonis.com/), [StealthBits](https://stealthbits.com/), [SailPoint File Access Manager](https://www.sailpoint.com/platform/file-access-manager/), [Immuta](https://www.immuta.com/)
+
+### Directory Services
+
+**Overview:** A repository for collecting information about users, devices, and resources for authentication and authorization. LDAP is a common standard for directory services.
+
+**Example(s):** [Microsoft Active Directory](https://azure.microsoft.com/en-us/services/active-directory/), [ForgeRock Directory Services](https://www.forgerock.com/platform/directory-services), [JumpCloud](https://jumpcloud.com/)
+
+### Identity Governance and Administration (IGA)
+
+**Overview:** Systems for administering accounts and credentials, access provisioning, and access reviews.
+
+**Example(s):** [SailPoint](https://www.sailpoint.com/), [Oracle Identity Governance](https://www.oracle.com/security/identity-management/governance/), [ForgeRock Identity Management](https://www.forgerock.com/platform/identity-management)
+
+### Identity Theft Protection
+
+**Overview:** Services that monitor and restore the personal data of consumers in the event of abnormal activity and theft.
+
+**Example(s):** [LifeLock](https://www.lifelock.com/), [Identity Guard](https://www.identityguard.com/)
+
+### Identity Wallets
+
+**Overview:** Identity stores that allow users to manage and share their digital identity credentials and data.
+
+**Example(s):** [Spruce](https://spruceid.com/), [Auth0 Sign In With Ethereum (SIWE)](https://auth0.com/blog/sign-in-with-ethereum-siwe-now-available-on-auth0/), [Proxy](https://www.proxy.com/blog/back-to-the-future)
+
+### Physical Access Control
+
+**Overview:** Solutions that manage physical identities and access to physical locations and spaces.
+
+**Example(s):** [Envoy Visitor Management System](https://envoy.com/products/visitor-management-system/), [Openpath](https://www.openpath.com/), [Kisi](https://www.getkisi.com/), [Sine](https://www.sine.co/)
+
+### Privileged Access Management (PAM)
+
+**Overview:** Systems for managing privileged (elevated) access for users, shared accounts, secrets, keys, and other high risk credentials.
+
+**Example(s):** [CyberArk](https://www.cyberark.com/), [BeyondTrust](https://www.beyondtrust.com/), [HashiCorp Vault](https://www.hashicorp.com/products/vault)
+
 # Fraud and Transaction Security
+
+## Fraud and Risk
 
 **Overview:** Systems and processes to monitor, detect, prevent, and remediate fraudulent transactions and activities.
 
 **Example(s):** [Sift](https://sift.com/), [Riskified](https://www.riskified.com/), [Deduce](https://deduce.com/), [Arkose Labs](https://www.arkoselabs.com/), [BioCatch](https://www.biocatch.com/), [Bolt Fraud Protection](https://www.bolt.com/fraud-protection/), [MagicCube](https://magiccube.co/), [Shift](https://www.shift-technology.com/), [Datavisor](https://www.shift-technology.com/), [Alloy](https://www.alloy.com/)
+
+## Trust and Safety
+
+**Overview:** Business practices, workflows, and tools used by online platforms to reduce the risk of users experiencing harm, fraud, abuse, and other negative behaviors.
+
+**Example(s):** [Spectrum Labs](https://www.spectrumlabsai.com/), [Cinder](https://cndr.io/), [Trustpage](https://trustpage.com/)
 
 # Governance, Risk, and Compliance
 
@@ -220,6 +282,12 @@
 
 **Example(s):** [SANS Security Policy Templates](https://www.sans.org/information-security-policy/), [Zavanta](https://comprose.com/policy-procedure-software.html), [Tugboat Logic Information Security Policy Generator](https://tugboatlogic.com/information-security-policy-template/)
 
+### Security Architecture
+
+**Overview:** A core information security function that defines and guides architectural requirements and design of security-relevant elements within an organization.
+
+**Example(s):** [Zero Trust Architecture (ZTA)](https://www.nist.gov/publications/zero-trust-architecture), [Software Defined Perimeter (SDP)](https://en.wikipedia.org/wiki/Software-defined_perimeter), [Secure Access Service Edge (SASE) ](https://blogs.gartner.com/andrew-lerner/2019/12/23/say-hello-sase-secure-access-service-edge/), [Privacy by Design](https://iapp.org/resources/article/privacy-by-design-the-7-foundational-principles/)
+
 ### Security Awareness
 
 **Overview:** Training, instruction, and tools to educate users within an organization how to protect themselves and the company's assets from loss or harm.
@@ -236,7 +304,7 @@
 
 **Overview:** Documented guidance for policies and controls to systematically manage security and risk.
 
-**Example(s):** [NIST Special Publication 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final), [ISO 27002](https://www.iso.org/standard/54533.html), [ISACA COBIT](https://www.isaca.org/resources/cobit)
+**Example(s):** [NIST Special Publication 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final), [ISO 27002](https://www.iso.org/standard/54533.html), [ISACA COBIT](https://www.isaca.org/resources/cobit), [MITRE ATT&CK](https://attack.mitre.org/)
 
 ## Risk
 
@@ -338,6 +406,12 @@
 
 **Example(s):** [CheckPoint Intrusion Prevention System](https://www.checkpoint.com/quantum/intrusion-prevention-system-ips/), [Cisco Secure IPS](https://www.cisco.com/c/en/us/products/security/ngips/index.html), [Juniper SRX](https://www.juniper.net/us/en/products/security/srx-series.html)
 
+### Messaging Security
+
+**Overview:** Processes and tools to secure and protect messaging and communication infrastructure, primarily focused on email-based threats.
+
+**Example(s):** [Tessian](https://www.tessian.com/), [ProofPoint Email Security and Protection](https://www.proofpoint.com/us/products/email-security-and-protection), [Mimecast Email Security](https://www.mimecast.com/products/email-security-with-targeted-threat-protection/), [GreatHorn](https://www.greathorn.com/), [IRONSCALES](https://ironscales.com/), [Area 1](https://www.area1security.com/)
+
 ### Network Access Control (NAC)
 
 **Overview:** Systems that provide visibility and control of devices accessing a network.
@@ -354,7 +428,7 @@
 
 **Overview:** Systems to filter user-initiated internet traffic and enforce corporate and regulatory content policies.
 
-**Example(s):** [Authentic8](https://www.authentic8.com/), [Palo Alto Networks Prisma Access](https://www.paloaltonetworks.com/sase/access), [Menlo Secure Web Gateway](https://www.menlosecurity.com/product/secure-web-gateway/), [Zscaler](https://www.zscaler.com/)
+**Example(s):** [Menlo Secure Web Gateway](https://www.menlosecurity.com/product/secure-web-gateway/), [Zscaler Internet Access](https://www.zscaler.com/products/zscaler-internet-access), [Lookout Secure Web Gateway](https://www.lookout.com/products/secure-web-gateway), [Forcepoint Secure Web Gateway](https://www.forcepoint.com/product/secure-web-gateway)
 
 ### SSL Visibility
 
@@ -373,6 +447,12 @@
 **Overview:** Prevention of damage and unauthorized access via wireless networks.
 
 **Example(s):** [7SIGNAL](https://www.7signal.com/), [WatchGuard Secure Wi-Fi](https://www.watchguard.com/wgrd-products/secure-wifi), [Aruba Wireless](https://www.arubanetworks.com/products/wireless/)
+
+### Zero Trust Network Access (ZTNA)
+
+**Overview:** Products that broker access to applications and network resources based on identity and context.
+
+**Example(s):** [Appgate SDP](https://www.appgate.com/zero-trust-network-access), [Zscaler Private Access](https://www.zscaler.com/products/zscaler-private-access), [Palo Alto Networks Prisma Access](https://www.paloaltonetworks.com/sase/access)
 
 ## Endpoint Security
 
@@ -394,6 +474,12 @@
 
 **Example(s):** [Kaspersky](https://usa.kaspersky.com/), [CrowdStrike Falcon Endpoint Protection](https://www.crowdstrike.com/endpoint-security-products/), [SparkCognition DeepArmor](https://www.sparkcognition.com/products/deeparmor/)
 
+### File Integrity Monitoring
+
+**Overview:** Solutions to monitor changes in operating system, database, and application files. 
+
+**Example(s):** [CrowdStrike Falcon FileVantage](https://www.crowdstrike.com/products/security-it-operations/falcon-filevantage/), [Tripwire File Integrity Manager](https://www.tripwire.com/solutions/file-integrity-and-change-monitoring), [Qualys File Integrity Monitoring](https://www.qualys.com/apps/file-integrity-monitoring/)
+
 ### Host Intrusion Prevention System (HIPS)
 
 **Overview:** Endpoint-based intrusion detection and prevention system to monitor and analyze internals and network traffic on the endpoint for prevention and detection of threats.
@@ -405,6 +491,12 @@
 **Overview:** Management of endpoints for containment of threats and secure enterprise network access.
 
 **Example(s):** [Hysolate](https://www.hysolate.com/), [Absolute](https://www.absolute.com/), [Ivanti](https://www.ivanti.com/)
+
+### Secure Web Browsers
+
+**Overview:** Security-focused web browsers and isolation for enterprises.
+
+**Example(s):** [Authentic8](https://www.authentic8.com/), [Island](https://www.island.io/), [Talon](https://talon-sec.com/)
 
 ## Data Center Security
 
@@ -420,31 +512,31 @@
 
 **Example(s):** [Commvault](https://www.commvault.com/), [Veeam](https://www.veeam.com/), [Iron Mountain](https://www.ironmountain.com/)
 
-### Messaging Security
-
-**Overview:** Processes and tools to secure and protect messaging and communication infrastructure, primarily focused on email-based threats.
-
-**Example(s):** [ProofPoint Email Security and Protection](https://www.proofpoint.com/us/products/email-security-and-protection), [GreatHorn](https://www.greathorn.com/), [IRONSCALES](https://ironscales.com/), [Area 1](https://www.area1security.com/)
-
 # Investors
 
-### Angel Investors
+### Angel and Seed Investors
 
 **Overview:** Independent individual investors or a group of individual investors who invest capital in early stage cybersecurity companies.
 
 **Example(s):** [Silicon Valley CISO Investments](https://www.svci.io/), [SYN Ventures](https://www.synventures.com/), [Cyber Seed Fund I](https://angel.co/cyber-seed-fund-i/syndicate)
 
+### Investment Banking
+
+**Overview:** Advisors and intermediaries for financial transactions, including mergers, acquisitions, and large scale investments.
+
+**Example(s):** [Momentum Cyber](https://momentumcyber.com/), [AGC Partners](https://agcpartners.com/), [DBO Partners](https://dbopartners.com/)
+
 ### Private Equity
 
 **Overview:** Late stage private equity firms and investment banks with significant portfolios of cybersecurity companies.
 
-**Example(s):** [Thoma Bravo](https://www.thomabravo.com/), [Vista Equity Partners](https://www.vistaequitypartners.com/), [Momentum Cyber](https://momentumcyber.com/)
+**Example(s):** [Thoma Bravo](https://www.thomabravo.com/), [Vista Equity Partners](https://www.vistaequitypartners.com/), [Symphony Technology Group](https://stgpartners.com/)
 
 ### Venture Capital
 
 **Overview:** Institutional venture capital firms with a significant number of cybersecurity investments and exits.
 
-**Example(s):** [Andreessen Horowitz](https://a16z.com/), [Sequoia](https://www.sequoiacap.com/), [AllegisCyber Capital](https://allegiscyber.com/), [ForgePoint Capital](https://forgepointcap.com/)
+**Example(s):** [Andreessen Horowitz](https://a16z.com/), [Sequoia](https://www.sequoiacap.com/), [NightDragon](https://www.nightdragon.com/), [YL Ventures](https://www.ylventures.com/), [AllegisCyber Capital](https://allegiscyber.com/), [ForgePoint Capital](https://forgepointcap.com/), [Ten Eleven](https://www.1011vc.com/)
 
 # Media
 
@@ -502,7 +594,7 @@
 
 **Overview:** Protecting the firmware of computers or devices from  compromise.
 
-**Example(s):** [Trapezoid](https://trapezoid.com/), [Eclypsium](https://eclypsium.com/), [Vdoo](https://www.vdoo.com/)
+**Example(s):** [Trapezoid](https://trapezoid.com/), [Eclypsium](https://eclypsium.com/), [Vdoo](https://www.vdoo.com/), [Finite State](https://finitestate.io/), [Palitronica Anvil](https://www.palitronica.com/products/anvil)
 
 ### Internet of Things (IoT) Security
 
@@ -514,63 +606,11 @@
 
 **Overview:** Tools to monitor and control the security of Industrial Control Systems (ICS).
 
-**Example(s):** [Claroty](https://claroty.com/), [Tenable.ot](https://www.tenable.com/products/tenable-ot), [Star Lab](https://www.starlab.io/)
+**Example(s):** [Dragos](https://www.dragos.com/), [Claroty](https://claroty.com/), [Tenable.ot](https://www.tenable.com/products/tenable-ot), [Star Lab](https://www.starlab.io/), [Palitronica Palisade](https://www.palitronica.com/products/palisade)
 
-### Supply Chain Security
+# Privacy
 
-**Overview:** Identification of threats and reduction of risk across the software and physical supply chain.
-
-**Example(s):** [RunSafe](https://runsafesecurity.com/), [iTrust](https://itrustinc.com/), [Kodiak Hub](https://www.kodiakhub.com/)
-
-# Privacy and Data Protection
-
-## Consumer Liberty
-
-### Personal Data Economy
-
-**Overview:** Platforms that enable individuals to take ownership of their information and profit from selling data.
-
-**Example(s):** [Meeco](https://www.meeco.me/), [digi.me](https://digi.me/), [CitizenMe](https://www.citizenme.com/)
-
-### Privacy Assistants
-
-**Overview:** Tools to help users understand and manage access to their private data.
-
-**Example(s):** [MySudo](https://mysudo.com/), [Have I Been Pwned](https://haveibeenpwned.com/), [Jumbo](https://www.withjumbo.com/)
-
-## Regulatory Compliance and Management
-
-### Consent Management
-
-**Overview:** Systems and processes for notifying users about personal data collection and collecting explicit consent.
-
-**Example(s):** [UserCentrics](https://usercentrics.com/), [Osano](https://www.osano.com/features/consent-management)
-
-### Data Privacy Request Automation
-
-**Overview:** Processes and tools to support individual requests for personal data and use under data privacy laws.
-
-**Example(s):** [Transcend](https://transcend.io/), [DataGrail](https://www.datagrail.io/), [Metomic](https://metomic.io/)
-
-### Privacy Management
-
-**Overview:** Processes, activities, and tools to support management of privacy legislation and individual data rights.
-
-**Example(s):** [OneTrust Privacy Management](https://www.onetrust.com/solutions/privacy-management/), [TrustArc](https://trustarc.com/), [WireWheel](https://wirewheel.io/)
-
-## Privacy By Design
-
-### Data Anonymization
-
-**Overview:** Tools to redact and anonymize data for safe data sharing.
-
-**Example(s):** [Privitar](https://www.privitar.com/), [Hazy](https://hazy.com/), [Statice](https://www.statice.ai/)
-
-### Privacy Developer Tools
-
-**Overview:** Tools to make it easier for developers to incorporate privacy into software and comply with privacy regulations while building and supporting software.
-
-**Example(s):** [Ethyca](https://ethyca.com/), [Tanker](https://tanker.io/), [Dataswift](https://www.dataswift.io/)
+## Consumer Privacy
 
 ### Anonymous Communication
 
@@ -578,17 +618,37 @@
 
 **Example(s):** [The Tor Project](https://www.torproject.org/), [Freenet](https://freenetproject.org/index.html), [Invisible Internet Project (I2P)](https://geti2p.net/en/)
 
-### Database Security
+### Breach Notification Services
 
-**Overview:** Tools, controls, and processes to protect databases from compromise.
+**Overview:** Services that help inform users if their personal information, such as email address or passwords, have been leaked in data breaches.
 
-**Example(s):** [Fortinet FortiGuard Database Security](https://www.fortinet.com/products/security-subscriptions/database-security), [IBM Guardium](https://www.ibm.com/security/data-security/guardium?p1=Search&p4=43700050370941945&p5=e&gclid=CjwKCAjwhaaKBhBcEiwA8acsHAYYOogx0LXERTMzU8CRCcGzXZcF-eI6anoVDhJ0dGHZHRnrOdJeSBoCaakQAvD_BwE&gclsrc=aw.ds), [Baffle](https://baffle.io/)
+**Example(s):** [Have I Been Pwned](https://haveibeenpwned.com/), [1Password Watchtower](https://watchtower.1password.com/), [Firefox Monitor](https://monitor.firefox.com/)
 
-### Data Discovery and Classification
+### Personal Data Economy
 
-**Overview:** The process of scanning data sources to find and classify structured and unstructured data, with a focus on sensitive and/or regulated data.
+**Overview:** Platforms that enable individuals to take ownership of their information and potentially profit from selling data.
 
-**Example(s):** [BigID](https://bigid.com/), [ActiveNav](https://activenav.com/), [Tanium Reveal](https://www.tanium.com/products/tanium-reveal/), [Varonis Data Classification Engine](https://www.varonis.com/products/data-classification-engine/)
+**Example(s):** [Meeco](https://www.meeco.me/), [digi.me](https://digi.me/), [CitizenMe](https://www.citizenme.com/), [Dataswift](https://www.dataswift.io/)
+
+### Personal Information Removal
+
+**Overview:** Services that centralize and automate the process of opting out and removing personal data from data brokers.
+
+**Example(s):** [Optery](https://www.optery.com/), [Removaly](https://removaly.com)
+
+### Privacy Assistants
+
+**Overview:** Tools to help users understand and manage access to their private data.
+
+**Example(s):** [Fastmail](https://www.fastmail.com/), [MySudo](https://mysudo.com/), [Jumbo](https://www.withjumbo.com/), [Rita](https://ritapersonaldata.com/), [Privacy](https://privacy.com/), [Cloaked](https://www.cloaked.app/)
+
+### Secure Collaboration
+
+**Overview:** Platforms for private messaging and information sharing through encrypted communication channels.
+
+**Example(s):** [Signal](https://signal.org), https://telegram.org/, [WhatsApp](https://www.whatsapp.com/)
+
+## Data Protection
 
 ### Data Loss/Leakage Prevention
 
@@ -596,23 +656,17 @@
 
 **Example(s):** [Code42](https://www.code42.com/), [Forcepoint Data Loss Prevention](https://www.forcepoint.com/product/dlp-data-loss-prevention), [McAfee Total Prevention](https://www.mcafee.com/enterprise/en-us/products/total-protection-for-data-loss-prevention.html)
 
+### Database Security
+
+**Overview:** Tools, controls, and processes to protect databases from compromise.
+
+**Example(s):** [Fortinet FortiGuard Database Security](https://www.fortinet.com/products/security-subscriptions/database-security), [IBM Guardium](https://www.ibm.com/security/data-security/guardium?p1=Search&p4=43700050370941945&p5=e&gclid=CjwKCAjwhaaKBhBcEiwA8acsHAYYOogx0LXERTMzU8CRCcGzXZcF-eI6anoVDhJ0dGHZHRnrOdJeSBoCaakQAvD_BwE&gclsrc=aw.ds), [Baffle](https://baffle.io/)
+
 ### e-Discovery
 
 **Overview:** Identification, collection, and storage of electronic information for investigations and legal requests.
 
 **Example(s):** [Relativity](https://www.relativity.com/), [Logicube](https://www.logicube.com/), [Nuix](https://www.nuix.com/solutions/corporations/ediscovery), [Consilio](https://www.consilio.com/)
-
-### Encryption
-
-**Overview:** Conversion of plaintext data from a readable form to a protected form using keys.
-
-**Example(s):** [Boxcryptor](https://www.boxcryptor.com/en/), [Post-Quantum](https://post-quantum.com/), [Virtru](https://www.virtru.com/), [ID Quantique](https://www.idquantique.com/)
-
-### File Integrity Protection
-
-**Overview:** Solutions to monitor changes in operating system, database, and application files. 
-
-**Example(s):** [Tripwire File Integrity Manager](https://www.tripwire.com/solutions/file-integrity-and-change-monitoring), [Qualys File Integrity Monitoring](https://www.qualys.com/apps/file-integrity-monitoring/)
 
 ### Public Key Infrastructure
 
@@ -626,17 +680,69 @@
 
 **Example(s):** [Vera](https://www.vera.com/), [Seclore EDRM](https://www.seclore.com/seclore-enterprise-digital-rights-management/)
 
-### Secure Collaboration
+## Enterprise Privacy Management
 
-**Overview:** Platforms for private messaging and information sharing through encrypted communication channels.
+### Data Discovery and Classification
 
-**Example(s):** [Signal](https://signal.org), [Mattermost](https://mattermost.com/), [Silent Circle](https://www.silentcircle.com/)
+**Overview:** The process of scanning data sources to find and classify structured and unstructured data, with a focus on sensitive and/or regulated data.
 
-### Tokenization
+**Example(s):** [BigID](https://bigid.com/), [ActiveNav](https://activenav.com/), [Tanium Reveal](https://www.tanium.com/products/tanium-reveal/), [Varonis Data Classification Engine](https://www.varonis.com/products/data-classification-engine/)
 
-**Overview:** Processes and tools for transforming sensitive data into a masked value or random string of characters with no meaningful value.
+### Data Deidentification and Pseudonymity
 
-**Example(s):** [Skyflow](https://www.skyflow.com/), [StrongSalt](https://www.strongsalt.com/), [Evervault](https://evervault.com/)
+**Overview:** Tools to redact and deidentify data for use by researchers, data scientists, and other parties without compromising the privacy of people in the dataset.
+
+**Example(s):** [Privitar](https://www.privitar.com/), [Hazy](https://hazy.com/), [Statice](https://www.statice.ai/), [Sarus](https://www.sarus.tech)
+
+### Enterprise Communication
+
+**Overview:** Messaging solutions to help employees and partners within an organization communicate securely.
+
+**Example(s):** [Mattermost](https://mattermost.com/), [Silent Circle](https://www.silentcircle.com/)
+
+### Encryption and Tokenization
+
+**Overview:** Processes and tools for transforming sensitive data into an encrypted or masked value.
+
+**Example(s):** [Very Good Security](https://www.verygoodsecurity.com/), [Skyflow](https://www.skyflow.com/), [Evervault](https://evervault.com/), [StrongSalt](https://www.strongsalt.com/)
+
+## Privacy Program Management
+
+### Assessment Managers
+
+**Overview:** Workflows and automation for various functions of a privacy program.
+
+**Example(s):** [OneTrust Privacy Management](https://www.onetrust.com/solutions/privacy-management/), [TrustArc](https://trustarc.com/), [BigID Privacy Impact Assessment App](https://bigid.com/privacy/privacy-impact-assessment-app/)
+
+### Consent Management
+
+**Overview:** Systems and processes for notifying users about personal data collection and collecting explicit consent.
+
+**Example(s):** [UserCentrics](https://usercentrics.com/), [Osano](https://www.osano.com/features/consent-management), [CookieYes](https://www.cookieyes.com/)
+
+### Data Mapping
+
+**Overview:** Tools to help organizations map data flows across the enterprise.
+
+**Example(s):** [DataGrail](https://www.datagrail.io/), [BigID Data Mapping](https://bigid.com/data-mapping/)
+
+### Data Subject Request Automation
+
+**Overview:** Processes and tools to support individual requests for personal data and use under data privacy laws.
+
+**Example(s):** [Transcend](https://transcend.io/), [Metomic](https://metomic.io/), [Ethyca](https://ethyca.com/), [Ketch Data Subject Rights Fulfillment](https://www.ketch.com/features/data-subject-rights-fulfillment)
+
+### Privacy Information Managers
+
+**Overview:** Information and updates for understanding global privacy laws and regulations.
+
+**Example(s):** [OneTrust DataGuidance](https://www.onetrust.com/products/onetrust-dataguidance/)
+
+### Website Scanning
+
+**Overview:** Tools to check websites to identify which cookies, beacons, and trackers are in use.
+
+**Example(s):** [PrivacyScore](https://privacyscore.org/), [Sovy GDPR Scan](https://www.sovy.com/gdpr-scan/), [Blacklight](https://themarkup.org/blacklight)
 
 # Professional Services
 
@@ -686,7 +792,7 @@
 
 **Overview:** Public platforms for specific cybersecurity services, such as bug bounties.
 
-**Example(s):** [HackerOne](https://www.hackerone.com/), [BugCrowd](https://www.bugcrowd.com/)
+**Example(s):** [HackerOne](https://www.hackerone.com/), [BugCrowd](https://www.bugcrowd.com/), [Synack](https://www.synack.com/)
 
 # Security Operations
 
@@ -726,13 +832,13 @@
 
 **Overview:** Tools to consolidate and correlate log data for identification of security incidents.
 
-**Example(s):** [Sumo Logic](https://www.sumologic.com/), [LogRhythm](https://logrhythm.com/), [Securonix](https://www.securonix.com/), [Rapid7 InsightIDR](https://www.rapid7.com/products/insightidr/), [Elastic SIEM](https://www.elastic.co/siem/)
+**Example(s):** [Splunk Enterprise Security](https://www.splunk.com/en_us/software/enterprise-security.html), [Sumo Logic Cloud SIEM](https://www.sumologic.com/solutions/cloud-siem-enterprise/), [Elastic SIEM](https://www.elastic.co/siem/), [Panther](https://panther.com/)
 
-### User Behavior Analytics (UBA)/User Entity Behavior Analytics (UEBA)
+### User and Entity Behavior Analytics (UEBA)
 
 **Overview:** Processes and tools to detect threats based on patterns in user behavior.
 
-**Example(s):** [Gurucul](https://gurucul.com/), [LogPoint](https://www.logpoint.com/en/), [Exabeam Behavioral Analytics](https://www.exabeam.com/product/behavioral-analytics/)
+**Example(s):** [Securonix UEBA](https://www.securonix.com/products/ueba/), [Gurucul](https://gurucul.com/), [Exabeam Behavioral Analytics](https://www.exabeam.com/product/behavioral-analytics/)
 
 ## Vulnerability Assessment and Management
 
@@ -758,7 +864,7 @@
 
 **Overview:**  Processes and tools for discovering, classifying, prioritizing, and remediating software and infrastructure vulnerabilities.
 
-**Example(s):** [Qualys](https://www.qualys.com/), [Tenable](https://www.tenable.com/), [ThreadFix](https://threadfix.it/)
+**Example(s):** [Qualys](https://www.qualys.com/), [Tenable](https://www.tenable.com/), [ThreadFix](https://threadfix.it/), [Vulcan](https://vulcan.io/)
 
 ## Change Management
 
@@ -805,6 +911,14 @@
 **Overview:** Systems and processes for collecting data from various security operations sources to define, prioritize, and automate incident response activities and workflows.
 
 **Example(s):** [FireEye Helix](https://www.fireeye.com/products/helix/soar.html), [Cyware](https://cyware.com/), [Swimlane](https://swimlane.com/), [Tines](https://www.tines.com/)
+
+## Intelligence
+
+### Open Source Intelligence (OSINT)
+
+**Overview:** Collection of publicly available data and information sources to provide actionable intelligence.
+
+**Example(s):** [Shodan](https://www.shodan.io/), [Maltego](https://www.maltego.com/), [GreyNoise](https://www.greynoise.io/)
 
 ### Threat Intelligence
 
