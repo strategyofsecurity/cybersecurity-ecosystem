@@ -910,7 +910,7 @@
 
 **Overview:** Systems and processes for collecting data from various security operations sources to define, prioritize, and automate incident response activities and workflows.
 
-**Example(s):** [FireEye Helix](https://www.fireeye.com/products/helix/soar.html), [Cyware](https://cyware.com/), [Swimlane](https://swimlane.com/), [Tines](https://www.tines.com/)
+**Example(s):** [FireEye Helix](https://www.fireeye.com/products/helix/soar.html), [Cyware](https://cyware.com/), [Swimlane](https://swimlane.com/), [Tines](https://www.tines.com/), [Torq](https://torq.io/)
 
 ## Intelligence
 
